@@ -10,7 +10,7 @@ Add to your project's applications or add to your PYTHONPATH
 CONFIGURATION
 
 Add linkedin_auth to your project's INSTALLED_APPS in settings.py
-Sign up for a Linkedin API key at 
+Sign up for a Linkedin API key at https://www.linkedin.com/secure/developer 
 Add the following to settings.py
 
 AUTH_PROFILE_MODULE = 'linkedin_auth.UserProfile'
