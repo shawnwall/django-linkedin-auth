@@ -1,2 +1,34 @@
-todo documentation
+DEPENDENCIES
 
+https://github.com/simplegeo/python-oauth2
+https://github.com/simplejson/simplejson
+
+INSTALLATION
+
+Add to your project's applications or add to your PYTHONPATH
+
+CONFIGURATION
+
+Add linkedin_auth to your project's INSTALLED_APPS in settings.py
+Sign up for a Linkedin API key at 
+Add the following to settings.py
+
+AUTH_PROFILE_MODULE = 'linkedin_auth.UserProfile'
+LINKEDIN_TOKEN = 'your_token'
+LINKEDIN_SECRET = 'your_key'
+LOGIN_URL = '/login/'
+
+USAGE
+
+/login url will redirect to linkedin for approval
+on success you will be redirected back to /login/authenticated
+a django.contrib.auth.models.User will be created or modified after approval
+token information will be stored in the UserProfile model
+
+MISC
+
+This app is just a modified version of the twitter example created by https://github.com/simplegeo
+
+TODO
+
+make this installable with distutils or something else
